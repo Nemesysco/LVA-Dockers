@@ -67,22 +67,25 @@ After the installation access the site using your browser:  http://127.0.0.1/LVA
 
 Click the "Status" tab and send the results to Nemesysco together with your order form (including the desired level of analysis and number of seats/capacity needed for the site). This information is needed to generate your unique license code.
 
-***** Step 2: Enter your license key**
+*** Step 2: Enter your license key**
 
 Once you get your license, Click the tab 'license' and enter the code received from Nemesysco, then click "validate".
 
 Once the License code is processed correctly, you can immediately start processing files.
+
 
 **Analyze a file (offline analysis)**
 
 Click on analyze, you can choose a file and click analyze.
 Use the web API to allow automated analysis of files. The file "QA7-LVA7 for Docker -Site Services.pdf" contains a description of the API.
 
+
 **Realtime (online) Analysis**
 
 The docker opens the port 12001. Use this port to send streaming packets of 2 seconds of voice data as PCM (8Khz) into the docker to get immediate results.
 
 Study the example codes for the use of offline and online analysis in Python (nmsAnalyze.py)
+
 
 **Enjoy exploring!
 **
