@@ -1,5 +1,5 @@
 # LVA-Dockers
-This is the official place where Nemesysco's LVA7 and QA7 dockers will be hosted and maintained
+This is the official place where Nemesysco's LVA7 and QA7 dockers will be hosted and maintained - It is still under construction!
 
 We are working to rebuild the interface and installation and much of what is described below will change and become simpler with future releases.
 
