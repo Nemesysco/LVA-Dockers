@@ -29,18 +29,21 @@ The docker installer can install Nemesysco's QA7 or LVA7 cores. you need to tell
 • For QA7, add the argument: app=QA7
 •	For the full LVA7, add the argument: app=LVA7
 This will be our second argument (We describe the installation of LVA7): 
+
        _bash nms_installer.sh docker app=LVA7_
 
 * **Question 3**: Do you have a web server installed on the target machine?
 If the answer is NO, and you are using one of the supported distribution, you can instruct the installation to install XAMPP by adding the parameter xampp
 
 To install xampp and then LVA7, execute:
+
        _sudo bash nms_installer.sh docker app=LVA7 xampp_
 
 Once the installation completes you will be able to access LVA7 at http://127.0.0.1/LVA7/index.php in your web browser
 
 *** If a web server is already installed**
 You need to know what url works. The url is used to communicate between part of the site, so http://127.0.0.1 or https://127.0.0.1 usually works. Use:
+
        _sudo bash nms_installer.sh docker app=LVA7 xampp url=http://127.0.0.1_
 
 Locate the files on the web server which support PHP (on many linux versions it would often, but not always, be at: /var/www/html)
@@ -51,29 +54,35 @@ if your pre-installed web server is xampp, use the argument path=/opt/lampp/htdo
 If you think that your path=/var/www/html and url=http://127.0.0.1, you can check it is correct by copying the file nms-single-page-test.php to that path (/var/www/html/nms-simple-page-test.php) and then check the url in your web browser: http://127.0.0.1/nms-simple-page-test.php. You should get the message 'it works'.
 
 If your path and url are correct (I will assume that /var/www/html/nms-simple-page-test.php), you can install the LVA7 instance with:
-      _bash nms_installer.sh docker app=LVA7 path=/var/www/html  url=http://127.0.0.1
+
+       _bash nms_installer.sh docker app=LVA7 path=/var/www/html  url=http://127.0.0.1
 
 After the installation you will be able to access LVA7 at http://127.0.0.1/LVA7/index.php in your web browser
 
 **Initialization**
+
 After the installation access the site using your browser:  http://127.0.0.1/LVA7/index.php
 
 ***Step 1: Send your SysID to Nemesysco**
+
 Click the "Status" tab and send the results to Nemesysco together with your order form (including the desired level of analysis and number of seats/capacity needed for the site). This information is needed to generate your unique license code.
 
-*** Step 2: Enter your license key**
+***** Step 2: Enter your license key**
+
 Once you get your license, Click the tab 'license' and enter the code received from Nemesysco, then click "validate".
 
 Once the License code is processed correctly, you can immediately start processing files.
 
 **Analyze a file (offline analysis)**
+
 Click on analyze, you can choose a file and click analyze.
 Use the web API to allow automated analysis of files. The file "QA7-LVA7 for Docker -Site Services.pdf" contains a description of the API.
 
 **Realtime (online) Analysis**
+
 The docker opens the port 12001. Use this port to send streaming packets of 2 seconds of voice data as PCM (8Khz) into the docker to get immediate results.
 
 Study the example codes for the use of offline and online analysis in Python (nmsAnalyze.py)
 
-Enjoy exploring!
-
+**Enjoy exploring!
+**
