@@ -5,6 +5,12 @@ This is the official place where Nemesysco's LVA7 and QA7 dockers will be hosted
 
 We are working to rebuild the interface and installation and much of what is described below will change and become simpler with future releases.
 
+**Opening your developer account**
+If you don't have a developer account yet, please visit https://nmsnewusers.azurewebsites.net/ to start the process and create an account for your organization.
+Once your new account is created and validated, it will be credited with 50 USD for your initial tests and learning experiences.
+Keep the information sent to you in the activation email as it will be needed in the future steps.
+
+
 **Installation**
 When you unzip the installer nms_installer-v1.0.5.sh you will find in the installer sub-directory nms_installer/ the installer script nms_installer.sh. 
 At this time, you need to run the script as root (the next version will not require it)
